@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Signup from './auth/Signup';
 import Login from './auth/Login';
 import StaffConfirm from './pages/StaffConfirm';
+import Dashboard from './dashboard/Dashboard';
 // …
 <Route path="/staff-confirm" element={<StaffConfirm />} />
 
@@ -49,6 +50,8 @@ function App() {
         <Routes>
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/dashboard-staff" element={<Dashboard staffId="staffId" />} /> {/* Pass the staffId prop here */}
+          {/* Add other routes here as needed */}
         </Routes>
       </div>
     </Router>
