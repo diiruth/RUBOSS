@@ -33,7 +33,7 @@ function Dashboard({ staffId }) {
       ) : (
         slots.map(slot => (
           <div key={slot.id}>
-            <p><strong>Service:</strong> {slot.serviceId}</p>
+            <p><strong>Service:</strong> {slot.serviceId} </p>
             <p><strong>Date:</strong> {slot.date} | {slot.startTime} - {slot.endTime}</p>
             <p><strong>Status:</strong> {slot.status === 1 ? 'Available' : slot.status === 2 ? 'Pending' : 'Finished'}</p>
           </div>
